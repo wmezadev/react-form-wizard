@@ -350,3 +350,13 @@ fieldset[disabled] .react-form-wizard .wizard-btn {
 .react-form-wizard.vertical .wizard-card-footer {
   padding-top: 30px;
 }
+
+.rfw-step {
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.is-step-active {
+  display: block;
+}

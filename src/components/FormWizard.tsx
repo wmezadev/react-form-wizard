@@ -157,7 +157,7 @@ const FormWizard: React.FC<FormWizardProps> & {
     };
 
     const renderContent = () => {
-      return steps[currentStep];
+      return steps.map((step, index) => (<div key={index} className={`rfw-step ${index === currentStep ? "is-step-active" : ""}`}>{step}</div>));
     };
     const progressBarStyle = {
       backgroundColor: color,
